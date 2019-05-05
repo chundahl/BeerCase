@@ -8,7 +8,7 @@ describe('CreationMethodSheetComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CreationMethodSheetComponent ]
+      declarations: [ CreationMethodSheetComponent ],
     })
     .compileComponents();
   }));

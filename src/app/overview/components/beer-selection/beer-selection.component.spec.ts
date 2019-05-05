@@ -8,7 +8,7 @@ describe('BeerSelectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BeerSelectionComponent ]
+      declarations: [ BeerSelectionComponent ],
     })
     .compileComponents();
   }));

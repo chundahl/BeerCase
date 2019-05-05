@@ -8,7 +8,7 @@ describe('GridOverviewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GridOverviewComponent ]
+      declarations: [ GridOverviewComponent ],
     })
     .compileComponents();
   }));

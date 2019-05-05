@@ -8,7 +8,7 @@ describe('BeerProfileCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BeerProfileCardComponent ]
+      declarations: [ BeerProfileCardComponent ],
     })
     .compileComponents();
   }));
