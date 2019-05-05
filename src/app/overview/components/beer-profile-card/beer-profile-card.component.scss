@@ -1,0 +1,50 @@
+.beerImage {
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.textContainer {
+  width: calc(100% - 24px);
+  padding: 12px;
+  color: white;
+  background-color: rgba(darkolivegreen, $alpha: 0.45);
+  position: sticky;
+  bottom: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.card {
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  border: 1px solid darkolivegreen;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card:hover {
+  .textContainer {
+    background-color: darkolivegreen;
+  }
+}
+
+.title {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 24px;
+}

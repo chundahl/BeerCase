@@ -1,0 +1,23 @@
+
+.logo {
+  height: calc(100% - 8px);
+  width: auto;
+  padding: 2px;
+  margin: 16px;
+  background-color: white;
+  border-radius: 50%;
+  top: 0;
+}
+
+.title {
+  font-size: 44px;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.upperToolbar {
+  height: 98px;
+}

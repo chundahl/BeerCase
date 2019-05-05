@@ -1,0 +1,70 @@
+<div class="formContainer">
+  <form class="form" [formGroup]="beerForm" (ngSubmit)="submitBeer()">
+    <mat-form-field>
+      <input
+        required
+        matInput
+        placeholder="Navn på øl"
+        formControlName="name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        required
+        matInput
+        placeholder="Navn på bryggeri"
+        formControlName="breweryName"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        required
+        matInput
+        placeholder="Antal på lager"
+        formControlName="amount"
+        type="number"
+        min="0"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        required
+        matInput
+        placeholder="Pris pr. stk."
+        formControlName="price"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        required
+        matInput
+        placeholder="Bedømmelse (0 - 100)"
+        formControlName="rating"
+        type="number"
+        min="0"
+        max="100"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        required
+        type="url"
+        matInput
+        placeholder="Billede url"
+        formControlName="image"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        required
+        matInput
+        placeholder="Beskrivelse af øllen"
+        formControlName="description"
+      >
+      </textarea>
+    </mat-form-field>
+    <button mat-button type="submit" [disabled]="!beerForm.valid">
+      Tilføj øl
+    </button>
+  </form>
+</div>

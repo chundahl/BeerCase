@@ -1,0 +1,11 @@
+<div (click)="beerClicked()" class="card" *ngIf="beer">
+  <img class="beerImage" src="{{ beer?.image }}" />
+  <div class="textContainer">
+    <span class="title">{{ beer?.name }}</span>
+    <span class="subtitle">{{ beer?.breweryName }}</span>
+    <div class="innerContainer">
+      <span>På lager: {{ beer?.amount }} stk.</span>
+      <span>Rating: {{ beer?.rating }}</span>
+    </div>
+  </div>
+</div>

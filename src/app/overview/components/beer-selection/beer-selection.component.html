@@ -1,0 +1,17 @@
+<mat-form-field>
+  <mat-label>Choose beer from PunkAPI</mat-label>
+  <mat-select [formControl]="beerFormControl">
+    <mat-option *ngFor="let beer of beers$ | async" [value]="beer">
+      {{ beer.name }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<button
+  mat-button
+  color="primary"
+  (click)="presentBeerCreation()"
+  [disabled]="!beerFormControl.valid"
+>
+  choose beer
+</button>

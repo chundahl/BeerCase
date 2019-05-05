@@ -1,0 +1,14 @@
+{
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.stylelintIntegration": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true,
+    "source.organizeImports": false // this sometimes causes an unsaved file loop
+  },
+  "editor.rulers": [100],
+  "html.format.indentHandlebars": true,
+  "html.format.maxPreserveNewLines": 0,
+  "formatFiles.excludePattern": "**/node_modules,**/.vscode",
+  "typescript.preferences.importModuleSpecifier": "non-relative"
+}

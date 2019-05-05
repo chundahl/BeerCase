@@ -1,0 +1,42 @@
+<div class="page">
+  <div class="detailContainer" *ngIf="beer$ | async as beer">
+    <div class="backContainer">
+      <button
+        (click)="toOverview()"
+        color="primary"
+        class="backButton"
+        mat-button
+      >
+        gå tilbage
+      </button>
+    </div>
+    <img class="image" src="{{ beer.image }}" />
+    <div class="columnContainer">
+      <div class="infoContainer">
+        <span class="name">{{ beer.name }}</span>
+        <p class="breweryName">
+          <span class="titleConnector"> - brygget af </span>
+          <span>{{ beer.breweryName }}</span>
+        </p>
+      </div>
+      <div class="descriptionContainer">
+        <span class="label">Beskrivelse</span>
+        <p class="text">{{ beer.description }}</p>
+      </div>
+      <div class="numbersContainer">
+        <div class="numberContainer">
+          <mat-icon>store</mat-icon>
+          <span class="text">{{ beer.amount }} stk.</span>
+        </div>
+        <div class="numberContainer">
+          <mat-icon inline="true">star</mat-icon>
+          <span class="value">{{ beer.rating }} af 100</span>
+        </div>
+        <div class="numberContainer">
+          <mat-icon>attach_money</mat-icon>
+          <span class="value">{{ beer.price }} pr. stk.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

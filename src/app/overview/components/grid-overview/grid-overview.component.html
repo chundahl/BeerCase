@@ -1,0 +1,14 @@
+<div class="gridContainer">
+  <mat-grid-list class="grid" cols="3" rowHeight="400px" gutterSize="40px">
+    <mat-grid-tile colspan="1" rowspan="1" *ngFor="let beer of beers$ | async">
+      <app-beer-profile-card
+        (clicked)="gotoBeer(beer.id)"
+        [beer]="beer"
+        class="card"
+      ></app-beer-profile-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-add-beer-card (newBeer)="addBeer()" class="card"></app-add-beer-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
